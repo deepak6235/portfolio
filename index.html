@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Portfolio Card</title>
   
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -77,10 +79,55 @@ body {
 
 
 
+    @media (max-width: 540px) {
+
+      .cardd{
+        height: 85vh !important;
+        width: 90vw;
+     overflow-y: auto !important;
+      }
+.carousel-item {
+  height: auto !important;
+  overflow-y: auto !important;
+  max-height: 100% !important;
+}
+.con {
+  height: auto !important;
+  max-height: 100% !important;
+}
+
+
+
+    }
+    @media (max-width: 540px) {
+
+      
+      .divider{
+        margin-top: 50% !important;
+
+      }
+
+      .myimg{
+        max-width: 50% !important;
+      }
+
+      .btnnn{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    margin-top :-2%;
+    gap: 5% !important;
+    font-size: 60% !important;
+
+}
 
 
 
 
+
+
+
+    }
 
 
 
@@ -181,18 +228,19 @@ body {
 
 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .cardd {
-/*     height: 90vh;   */
+    height: 50vh;  
     padding-bottom: 30px; 
     
   }
 }
 
 
+
 @media (max-width: 420px) {
   .cardd {
-/*     height: 90vh;   */
+    height: 50vh;  
     padding-bottom: 30px; 
     
   }
@@ -200,12 +248,69 @@ body {
 
 @media (max-width: 290px) {
   .cardd {
-/*     height: 92vh;   */
+    height: 50vh;  
     padding-bottom: 30px; 
     
   }
+} */
+
+
+
+
+
+/* @media (max-width: 750px) {
+  .divider {
+    margin-top: 15%; 
+  }
 }
 
+@media (max-width: 710px) {
+  .divider {
+    margin-top: 20%; 
+  }
+}
+
+@media (max-width: 430px) {
+  .divider {
+    margin-top: 35%; 
+  }
+}
+
+
+@media (max-width: 390px) {
+  .divider {
+    margin-top: 45%; 
+  }
+}
+
+@media (max-width: 335px) {
+  .divider {
+    margin-top: 75%; 
+  }
+}
+
+
+@media (max-width: 370px) {
+  .divider {
+    margin-top: 70%; 
+  }
+}
+
+
+
+
+@media (max-width: 290px) {
+  .divider {
+    margin-top: 110%; 
+  }
+} */
+
+
+/* @media (max-width: 287px) {
+  .divider {
+    margin-top: 130%; 
+  }
+} */
 
 .divider {
   height: 2px;
@@ -253,59 +358,9 @@ body {
 
 
 
-@media (max-width: 750px) {
-  .divider {
-    margin-top: 15%; 
-  }
-}
-
-@media (max-width: 710px) {
-  .divider {
-    margin-top: 20%; 
-  }
-}
-
-@media (max-width: 430px) {
-  .divider {
-    margin-top: 35%; 
-  }
-}
-
-
-@media (max-width: 390px) {
-  .divider {
-    margin-top: 45%; 
-  }
-}
-
-@media (max-width: 335px) {
-  .divider {
-    margin-top: 75%; 
-  }
-}
-
-
-@media (max-width: 370px) {
-  .divider {
-    margin-top: 70%; 
-  }
-}
 
 
 
-
-@media (max-width: 290px) {
-  .divider {
-    margin-top: 110%; 
-  }
-}
-
-
-@media (max-width: 287px) {
-  .divider {
-    margin-top: 130%; 
-  }
-}
 
 
 .head2{
@@ -495,14 +550,14 @@ body {
     </div>
 
 
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 text-center">
       <img src="boss.png" class="img-fluid rounded-circle mt-3  myimg" style="max-width: 60%;" alt="Profile">
     </div>
   </div>
 
-
+<div class="row">
   <hr class="divider">
-
+</div>
 
   <div class="text-center">
     <div class="sicons d-inline-flex gap-3">
@@ -521,53 +576,37 @@ body {
 
 
             <div class="carousel-item mt-5 "><div class="con container mt-5">
-  <div class="row gap-5 justify-content-center mt-5" >
-
-
-
-
-
-    <a class="card align-items-center w-25 car text-decoration-none" href="https://www.kmocollege.in/" target="_blank" style="cursor: pointer;">
-<div class="card-body">
-    <div class="card-title h3 justify-content-center">Degree</div>
-      <div class="card-subtitle h5 mt-2">BCA</div>
-    <div class="card-text mt-2">
-Kmo Arts & Scinece college koduvally 2022-25</div>
-</div>
-
-</a>
-
-
-        <a class="card align-items-center w-25 car text-decoration-none" target="_blank" href="https://schools.org.in/kozhikode/32040300108/holy-family-hs-kattippara.html" style="cursor: pointer;">
-
-<div class="card-body">
-    <div class="card-title h3 justify-content-center">+2</div>
-    <div class="card-subtitle h6 mt-2">Biology Science</div>
-    <div class="card-text mt-2">
-    Holy Family HSS Kattipara 2020-22</div>
-</div>
-
-</a>
-
-
-
-        <a class="card align-items-center w-25 car text-decoration-none" target="_blank" href="https://www.instagram.com/mgm._hss_engapuzha/?hl=en" style="cursor: pointer;">
-
-<div class="card-body">
-    <div class="card-title h3 justify-content-center">10</div>
-    <div class="card-text mt-3">
-        MGM High School Engapuzha 2019-20</div>
-</div>
-</a>
-
-
-
-
-
-
-
-
+<div class="row justify-content-center mt-5">
+  <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+    <a class="card car text-decoration-none w-100" href="https://www.kmocollege.in/" target="_blank">
+      <div class="card-body text-center">
+        <div class="card-title h3">Degree</div>
+        <div class="card-subtitle h5 mt-2">BCA</div>
+        <div class="card-text mt-2">KMO Arts & Science College Koduvally 2022-25</div>
+      </div>
+    </a>
   </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+    <a class="card car text-decoration-none w-100" href="https://schools.org.in/kozhikode/32040300108/holy-family-hs-kattippara.html" target="_blank">
+      <div class="card-body text-center">
+        <div class="card-title h3">+2</div>
+        <div class="card-subtitle h6 mt-2">Biology Science</div>
+        <div class="card-text mt-2">Holy Family HSS Kattippara 2020-22</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+    <a class="card car text-decoration-none w-100" href="https://www.instagram.com/mgm._hss_engapuzha/?hl=en" target="_blank">
+      <div class="card-body text-center">
+        <div class="card-title h3">10</div>
+        <div class="card-text mt-3">MGM High School Engapuzha 2019-20</div>
+      </div>
+    </a>
+  </div>
+</div>
+
 
 
 
