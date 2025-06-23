@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Card</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+
+    
+body {
+  margin: 0;
+  height: 100vh;
+  /* background: linear-gradient(to top, rgb(1, 8, 58), black); */
+   background: linear-gradient(to top, #010F4A, #020D2C, #000000);
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  background-color: #f0f0f0; 
+}
+
+.cardd {
+  /* background-color: rgba(0, 0, 0, 0.927); */
+  background: rgba(10, 10, 10, 0.6); 
+  /* box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37);  */
+  backdrop-filter: blur(10px); 
+  width: 88vw;
+  height: 85vh;
+  border-radius: 20px;
+  /* transition: width 0.5s ease-in-out; */
+      transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  gap: 30px;
+
+}
+
+.cardd:hover{
+    animation: an ease-in-out 3.5s infinite;
+          transform: scale(1.01);
+}
+
+
+
+
+
+
+@keyframes an {
+
+  0%{
+    box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37); 
+
+  }
+
+  50%{
+    /* box-shadow: 0 8px 20px 0 rgb(1, 106, 167);  */
+    box-shadow:
+  0 -4px 8px -2px rgb(1, 106, 167),     
+  4px 0 8px -2px rgb(1, 106, 167),     
+  0 4px 8px -2px rgb(1, 106, 167),    
+  -4px 0 8px -2px rgb(1, 106, 167);  
+
+  }
+
+  100%{
+    box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37); 
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  width: 100%;       
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  background-color: transparent;
+}
+
+
+.navbar h2 {
+  color: white;
+  margin-left: 3%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.btnnn{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    margin-top :-2%;
+    gap: 35%;
+
+}
+
+.btnn{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 0;
+    font-size: 100%;
+    cursor: pointer;
+
+}
+
+.btnn:hover{
+    color: aqua;
+}
+
+
+.btnn:active{
+    color: aquamarine;
+}
+
+
+
+.con {
+  width: 70vw;
+  height: 68vh;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+
+
+}
+
+
+.cardd:hover .con {
+  width: 72vw;
+  height: 70vh;
+}
+
+.sicons{
+    display: inline-flex;
+    gap: 10px;
+
+}
+
+.h2:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.icc{
+
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.more:hover{
+    color: aqua;
+
+}
+
+.icc:hover{
+    color: aqua;
+    transform: scale(1.50);
+}
+
+.home{
+    color: aqua;
+}
+
+
+
+@media (max-width: 600px) {
+  .cardd {
+    height: 90vh;  
+    padding-bottom: 30px; 
+    
+  }
+}
+
+
+@media (max-width: 420px) {
+  .cardd {
+    height: 90vh;  
+    padding-bottom: 30px; 
+    
+  }
+}
+
+@media (max-width: 290px) {
+  .cardd {
+    height: 92vh;  
+    padding-bottom: 30px; 
+    
+  }
+}
+
+
+.divider {
+  height: 2px;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(44, 55, 208);
+  margin-top: 5%;
+  border-style: solid;
+  animation: dvd ease-in-out 3.5s infinite;
+  transform: scale(1.04);
+
+}
+
+
+
+
+
+
+
+@keyframes dvd {
+
+  0%{
+    box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37); 
+
+  }
+
+  50%{
+    /* box-shadow: 0 8px 20px 0 rgb(1, 106, 167);  */
+    box-shadow:
+  0 -4px 8px -2px rgb(1, 106, 167),     
+  4px 0 8px -2px rgb(1, 106, 167),     
+  0 4px 8px -2px rgb(1, 106, 167),    
+  -4px 0 8px -2px rgb(1, 106, 167);  
+
+  transform: scale(1.01);
+
+  }
+
+  100%{
+    box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37); 
+  }
+  
+}
+
+
+
+
+@media (max-width: 750px) {
+  .divider {
+    margin-top: 15%; 
+  }
+}
+
+@media (max-width: 710px) {
+  .divider {
+    margin-top: 20%; 
+  }
+}
+
+@media (max-width: 430px) {
+  .divider {
+    margin-top: 35%; 
+  }
+}
+
+
+@media (max-width: 390px) {
+  .divider {
+    margin-top: 45%; 
+  }
+}
+
+@media (max-width: 335px) {
+  .divider {
+    margin-top: 75%; 
+  }
+}
+
+
+@media (max-width: 370px) {
+  .divider {
+    margin-top: 70%; 
+  }
+}
+
+
+
+
+@media (max-width: 290px) {
+  .divider {
+    margin-top: 110%; 
+  }
+}
+
+
+@media (max-width: 287px) {
+  .divider {
+    margin-top: 130%; 
+  }
+}
+
+
+.head2{
+  width: 80%;
+  height: 2px;
+  margin-left: 10%;
+  background-color: aqua;
+  border: 0px;
+  border-radius: 100px;
+  border-style: solid;
+    animation: an ease-in-out 1s infinite;
+  
+}
+
+
+
+
+
+
+
+
+
+.myimg{
+  border: 2px;
+  border-style: solid;
+  border-color: aqua;
+  padding: 4px;
+  animation: immg ease-in-out 5s infinite;
+}
+
+@keyframes immg {
+  0%{
+    border-color: aqua;
+  }
+  25%{
+    border-color: rgb(0, 153, 255);
+  }
+  50%{
+    border-color: rgb(55, 98, 227);
+  }
+  75%{
+    border-color: rgb(0, 153, 255);
+  }
+  100%{
+    border-color: aqua;
+  }
+  
+}
+
+
+
+.car{
+    
+ background: rgba(0, 0, 14, 0.633);
+  box-shadow: -0px 4px 10px 0 rgba(31, 38, 135, 0.37); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  transition: ease-in-out 0.3s ;
+  color: white;
+
+}
+
+
+.car:hover{
+    transform: scale(1.12);
+      background-color: rgba(6, 6, 63, 0.363);
+    border: 1px solid blue;
+}
+
+
+
+
+.box{
+  height: 12%;   
+}
+
+.boxx{
+
+ background: rgba(0, 0, 14, 0.633);
+  box-shadow: -0px 4px 10px 0 rgba(31, 38, 135, 0.37); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  transition: ease-in-out 0.3s ;
+
+
+
+}
+
+
+.boxx:hover{
+  background-color: rgba(6, 6, 63, 0.363);
+    border: 1px solid blue;
+    transform: scale(1.04);
+}
+
+
+
+
+.cbtnnn{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    margin-top :-2%;
+    gap: 35%;
+
+}
+
+.cbtnn{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 0;
+    font-size: 100%;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+
+}
+
+.carousel {
+  width: 100%;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+  </style>
+</head>
+<body> 
+  
+
+
+
+
+  <div class="cardd">
+
+
+    <nav class="navbar">
+      <div>
+      <h2>Portfolio</h2>
+
+</div>
+
+
+      <div class="btnnn">
+      <a class="btnn " type="button" href="#movee" data-bs-slide-to="0">Home</a>
+      <a class="btnn" type="button" href="#movee" data-bs-slide-to="1">Qualification</a>
+      <a class="btnn " type="button" href="#movee" data-bs-slide-to="2">Contact</a>
+    
+    </div>
+    </nav>
+
+
+
+
+
+
+    <div class="carousel slide" id="movee" data-bs-ride="false" data-bs-interval="false">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+<div class="con container">
+  <div class="row  h-75">
+
+    <div class="col-md-6 mt-5 text-white" style="margin-top: 2%;">
+      <div class="h1 mt-5">Hello! I'm <span style="color: aqua;">Deepak</span></div>
+      <div class="h6 mt-3">BCA Student & Aspiring Web/App Developer</div>
+      <p>I'm a BCA student passionate about technology, especially web and app development. I love turning creative ideas into real-world digital experiences using modern tools and frameworks.</p>
+
+    </div>
+
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+      <img src="boss.png" class="img-fluid rounded-circle mt-3  myimg" style="max-width: 60%;" alt="Profile">
+    </div>
+  </div>
+
+
+  <hr class="divider">
+
+
+  <div class="text-center">
+    <div class="sicons d-inline-flex gap-3">
+  <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github icc"></i></a>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in icc"></i></a>
+  <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram icc"></i></a>
+  <a href="mailto:youremail@example.com"><i class="fas fa-envelope icc"></i></a>
+    </div>
+  </div>
+</div>
+            
+            </div>
+
+
+
+
+
+            <div class="carousel-item mt-5 "><div class="con container mt-5">
+  <div class="row gap-5 justify-content-center mt-5" >
+
+
+
+
+
+    <a class="card align-items-center w-25 car text-decoration-none" href="https://www.kmocollege.in/" target="_blank" style="cursor: pointer;">
+<div class="card-body">
+    <div class="card-title h3 justify-content-center">Degree</div>
+      <div class="card-subtitle h5 mt-2">BCA</div>
+    <div class="card-text mt-2">
+Kmo Arts & Scinece college koduvally 2022-25</div>
+</div>
+
+</a>
+
+
+        <a class="card align-items-center w-25 car text-decoration-none" target="_blank" href="https://schools.org.in/kozhikode/32040300108/holy-family-hs-kattippara.html" style="cursor: pointer;">
+
+<div class="card-body">
+    <div class="card-title h3 justify-content-center">+2</div>
+    <div class="card-subtitle h6 mt-2">Biology Science</div>
+    <div class="card-text mt-2">
+    Holy Family HSS Kattipara 2020-22</div>
+</div>
+
+</a>
+
+
+
+        <a class="card align-items-center w-25 car text-decoration-none" target="_blank" href="https://www.instagram.com/mgm._hss_engapuzha/?hl=en" style="cursor: pointer;">
+
+<div class="card-body">
+    <div class="card-title h3 justify-content-center">10</div>
+    <div class="card-text mt-3">
+        MGM High School Engapuzha 2019-20</div>
+</div>
+</a>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+</div></div>
+
+
+
+
+
+<div class="carousel-item"><div class="con container ">
+    <div class="btn-group-vertical gap-4 mt-3 w-100">
+
+  <div class="row justify-content-center w-100 box">
+  <div class="text-center card  w-75 justify-content-center boxx">
+  <a href="https://github.com/yourusername" target="_blank" class="text-decoration-none"><i class="fab fa-github icc me-3"></i>GitHub</a>
+
+    </div>
+  </div>
+
+    <div class="row justify-content-center w-100 box " >
+  <div class="text-center card  w-75 justify-content-center boxx">
+
+  <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-decoration-none"><i class="fab fa-linkedin-in icc me-3"></i>LinkedIn</a>
+
+    </div>
+  </div>
+
+
+    <div class="row justify-content-center w-100 box">
+  <div class="text-center card w-75 justify-content-center boxx ">
+
+  <a href="https://instagram.com/yourprofile" target="_blank" class="text-decoration-none"><i class="fab fa-instagram icc me-3 text-decoration-none"></i>Instagram</a>
+
+    </div>
+  </div>
+
+
+    <div class="row justify-content-center w-100 box" >
+  <div class="text-center card  w-75 justify-content-center boxx">
+
+  <a href="mailto:youremail@example.com" target="_blank" class="text-decoration-none"><i class="fas fa-envelope icc me-3"></i>Email</a>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
